@@ -24,6 +24,11 @@
      <DOMVALUE_L>CBS8</DOMVALUE_L>
      <DDTEXT>CBS8</DDTEXT>
     </DD07V>
+    <DD07V>
+     <VALPOS>0003</VALPOS>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>CBS7</DDTEXT>
+    </DD07V>
    </DD07V_TAB>
   </asx:values>
  </asx:abap>

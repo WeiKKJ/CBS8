@@ -135,6 +135,69 @@
      </DOCUMENTATION>
     </item>
     <item>
+     <FUNCNAME>ZFM_CBS8_DET</FUNCNAME>
+     <SHORT_TEXT>3.1.4. 支付/代发/代扣详情查询</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>INPUT</PARAMETER>
+       <TYP>ZSCS8_D</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <TYP>ZSCS8_D_OUT</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>OUTPUTSTR</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>RTYPE</PARAMETER>
+       <TYP>BAPI_MTYPE</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>RTMSG</PARAMETER>
+       <TYP>BAPI_MSG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>BODY</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CBS83.1.4. 支付/代发/代扣详情查询</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CBS83.1.4. 支付/代发/代扣详情查询返回</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUTPUTSTR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>CBS83.1.4. 支付/代发/代扣详情查询返回json</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>消息类型: S 成功,E 错误,W 警告,I 信息,A 中断</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RTMSG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>消息文本</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BODY</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
      <FUNCNAME>ZFM_CBS8_ELE_BIL_QUE</FUNCNAME>
      <SHORT_TEXT>3.1.5. 账户管理-电子回单查询</SHORT_TEXT>
      <IMPORT>
