@@ -50,6 +50,17 @@ INITIALIZATION.
 
 START-OF-SELECTION.
   PERFORM auth_check.
+  CALL FUNCTION 'ENQUEUE_ES_PROG'
+    EXPORTING
+      mode_trdir   = 'E' "独占锁
+      name         = 'Z_PROG_LOCK' "自定义锁名称
+      _scope       = '2' "锁传递至更新任务
+    EXCEPTIONS
+      foreign_lock = 1 "已被锁定
+      OTHERS       = 2.
+  IF sy-subrc <> 0.
+    MESSAGE '程序已在运行！' TYPE 'E'.
+  ENDIF.
   PERFORM savelog(zreplog) USING sy-repid '' IF FOUND.
   PERFORM getdata.
   PERFORM updatelog(zreplog) IF FOUND.
